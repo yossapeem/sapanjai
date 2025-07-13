@@ -23,7 +23,7 @@ export default function AuthProvider({ children }: PropsWithChildren) {
     });
   }, []);
   return (
-    <AuthContext.Provider value={{ session, user: session?.user }}>
+    <AuthContext.Provider value={{ session, user: session?.user } as any}>
       {children}
     </AuthContext.Provider>
   );
