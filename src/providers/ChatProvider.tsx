@@ -13,44 +13,37 @@ export default function ChatProvider({ children }: PropsWithChildren) {
   const { profile } = useAuth();
 
   useEffect(() => {
-    console.log("USE EFFECT: ", profile);
-    if (!profile) {
-      return;
-    }
-    const connect = async () => {
-      console.log(profile.id);
+  if (!profile?.id) return;
 
+  const connect = async () => {
+    try {
+      console.log("Connecting user:", profile.id);
       await client.connectUser(
         {
           id: profile.id,
           name: profile.full_name,
           image: supabase.storage
             .from("avatars")
-            .getPublicUrl(profile.avatar_url).data.publicUrl as any,
-        } ,
+            .getPublicUrl(profile.avatar_url ?? "").data.publicUrl,
+        },
         client.devToken(profile.id)
       );
-
+      console.log("Connected successfully");
       setIsActive(true);
-      //  const channel = client.channel("messaging", "the_park", {
-      //    name: "The Park",
-      //  }as any);
-      //  await channel.watch();
-    };
+    } catch (error) {
+      console.error("Error connecting user:", error);
+    }
+  };
 
-    connect();
+  connect();
 
-    return () => {
-      if (isActive) {
-        client.disconnectUser();
-      }
-      setIsActive(false);
-    };
-  }, [profile?.id]);
+  return () => {
+    console.log("Disconnecting user");
+    client.disconnectUser();
+    setIsActive(false);
+  };
+}, [profile?.id]);
 
-  if (!isActive) {
-    return <ActivityIndicator />;
-  }
 
   return (
     <OverlayProvider>
