@@ -4,7 +4,7 @@
     "slug": "Sapanjai",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/Sapanjai-icon.png",
     "scheme": "Sapanjai",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
