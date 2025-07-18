@@ -1,3 +1,9 @@
+#### 🧠 Sapanjai App
+
+Sapanjai is a sentiment-aware chat application designed to detect and respond to users' emotions in real time using a FastAPI backend and Supabase. Built with React Native and Expo.
+
+---
+
 ###Disclaimer (ข้อตกลงในการใช้ซอฟต์แวร์)
 ------------------------------------------
 
