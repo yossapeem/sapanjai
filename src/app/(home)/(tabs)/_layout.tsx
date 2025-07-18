@@ -15,15 +15,6 @@ export default function TabsNavigator() {
         }}
       />
       <Tabs.Screen
-        name="assessment"
-        options={{
-          title: "Assessment",
-          tabBarIcon: ({ size, color }) => (
-            <FontAwesome name="tasks" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="profile"
         options={{
           title: "Profile",

@@ -1,3 +1,4 @@
+import CustomMessageInput from "@/src/components/CustomMessageInput";
 import { useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";
 import { ActivityIndicator, Text } from "react-native";
@@ -31,9 +32,9 @@ export default function ChannelScreen() {
   return (
     <Channel channel={channel}>
       <MessageList />
-      <SafeAreaView edges={['bottom']}>
-            <MessageInput />
-      </SafeAreaView>
-      </Channel>
+      <CustomMessageInput channel={channel} />
+    </Channel>
   );
 }
+
+//<CustomMessageInput channel={channel} />

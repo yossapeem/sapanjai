@@ -1,5 +1,8 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
+.vscode/
+.vs/
+
 # dependencies
 node_modules/
 
@@ -37,6 +40,12 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Supabase
+.supabase/
+supabase/.output/       # build output
+supabase/.temp/         # temp files (older versions)
+supabase/.env.local     # local env (if exists)
 
 app-example
 
