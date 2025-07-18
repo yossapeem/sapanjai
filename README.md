@@ -1,54 +1,147 @@
-<<<<<<< HEAD
-# sapanjai
-=======
-# Welcome to your Expo app 👋
+###Disclaimer (ข้อตกลงในการใช้ซอฟต์แวร์)
+------------------------------------------
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+ซอฟต์แวร์นี้เป็นผลงานที่พัฒนาขึ้นโดย  
+นายยศพีร์ มนัสปิยะ  
+นางสาววิริญจน์ ชินธรรมมิตร  
+นายภัทรพล คงสุข  
+จากโรงเรียนสาธิตนานาชาติมหาวิทยาลัยมหิดล  
+ภายใต้การดูแลของนายดาวิษ เทพชาตรี  
+ภายใต้โครงการ **ระบบปัญญาประดิษฐ์เพื่อการสื่อสารอย่างปลอดภัยสำหรับผู้มีภาวะเปราะบางทางจิต**  
+ซึ่งสนับสนุนโดยสำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.)
 
-## Get started
+โดยมีวัตถุประสงค์เพื่อส่งเสริมให้นักเรียนและนักศึกษาได้เรียนรู้และฝึกทักษะในการพัฒนาซอฟต์แวร์  
+ลิขสิทธิ์ของซอฟต์แวร์นี้จึงเป็นของผู้พัฒนา ซึ่งผู้พัฒนาได้อนุญาตให้สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติเผยแพร่ซอฟต์แวร์นี้  
+ตาม “ต้นฉบับ” โดยไม่มีการแก้ไขดัดแปลงใด ๆ ทั้งสิ้น ให้แก่บุคคลทั่วไปได้ใช้เพื่อประโยชน์ส่วนบุคคลหรือเพื่อการศึกษา  
+โดยไม่มีวัตถุประสงค์ในเชิงพาณิชย์และไม่คิดค่าตอบแทนจากการใช้งานซอฟต์แวร์ดังกล่าว
 
-1. Install dependencies
+สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติจึงไม่มีหน้าที่ในการดูแล บำรุงรักษา  
+จัดการอบรมการใช้งาน หรือพัฒนาประสิทธิภาพซอฟต์แวร์  
+รวมทั้งไม่รับรองความถูกต้องหรือประสิทธิภาพการทำงานของซอฟต์แวร์  
+ตลอดจนไม่รับประกันความเสียหายต่าง ๆ อันเกิดจากการใช้ซอฟต์แวร์นี้ทั้งสิ้น
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+This software is a work developed by:
 
-   ```bash
-   npx expo start
-   ```
+Mr. Yossapee Manaspiya  
+Ms. Wirin Chinthammit  
+Mr. Pattarapol Kongsuk  
 
-In the output, you'll find options to open the app in a
+from Mahidol University International Demonstration School under the supervision of Mr. Dawit Thepchatree,  
+as part of the project “**Safe Communication with Mental Health-Sensitive Individuals through Artificial Intelligence**”  
+which has been supported by the National Science and Technology Development Agency (NSTDA).
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+The purpose of the project is to encourage students to learn and develop skills in software development.  
+Therefore, the intellectual property of this software belongs to the developers.  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+The developers grant NSTDA permission to distribute this software as-is, without modification,  
+for personal or academic use only, and not for commercial purposes.
 
-## Get a fresh project
+NSTDA is not responsible for the maintenance, training, performance, or functionality of the software,  
+nor will it be liable for any damages arising from its use.
 
-When you're ready, run:
 
-```bash
-npm run reset-project
+1. Detailed Installation Manual
+-------------------------------
+
+Follow this GitHub directory and download all the files attached:
+https://github.com/yossapeem/sapanjai.git
+
+### Terminal 1: Frontend Setup
+Navigate to the project directory:
+```
+cd sapanjai
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Install the necessary frontend dependencies:
+```
+npm install
+```
 
-## Learn more
+If you encounter errors during installation, use this command instead:
+```
+npm install --legacy-peer-deps
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### Terminal 2: Database Setup
+Install Docker (if not already installed):
+Follow the installation guide here: https://www.docker.com/get-started/
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Install Deno (required for Supabase):
+Follow the installation guide here: https://deno.land/manual/getting_started/installation
 
-## Join the community
+Navigate to the Sapanjai directory:
+```
+cd sapanjai
+```
 
-Join our community of developers creating universal apps.
+Start Supabase locally:
+```
+npx supabase start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
->>>>>>> f5bc86a (Setup expo)
+Log in to Supabase:
+```
+npx supabase login
+```
+
+(Use your Supabase credentials)
+Email: pattarapol.ksk@gmail.com  
+Password: Whatisgrass_04  
+Enter the verification code shown on screen.
+
+Serve Supabase functions:
+```
+npx supabase functions serve
+```
+
+### Terminal 3: Backend Setup
+Install FastAPI, Uvicorn, and other dependencies:
+```
+pip install fastapi uvicorn transformers torch
+```
+Optional: Set up a virtual environment:
+```
+python -m venv venv
+```
+
+MacOS/Linux: source venv/bin/activate  
+Windows: venv\Scripts\activate
+
+If you have a `requirements.txt`, install dependencies with:
+```
+pip install -r requirements.txt
+```
+
+2. Detailed User Manual (คู่มือการใช้งานโดยละเอียด)
+------------------------------------------------------
+
+Follow every step thoroughly for all three terminals as listed above.
+
+Start the FastAPI server with this command in Terminal 3:
+```
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+If you get an error saying `uvicorn` is not recognized, use:
+```
+python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+To access the platform, install **Expo Go** from the App Store or Google Play Store.
+
+Start the application with this command in Terminal 1:
+```
+npx expo start
+```
+
+After running that command, a QR code should appear.
+
+Use your mobile device to scan the QR code:
+- iOS: Use the Camera app
+- Android: Use the in-app camera
+
+**Notice**: On the registration page, you do not need to sign in with a legitimate email account.
+
+
