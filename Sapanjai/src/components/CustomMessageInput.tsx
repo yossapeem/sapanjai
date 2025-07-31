@@ -30,7 +30,7 @@ export default function CustomMessageInput({
     console.log("analyzing: ", {text})
     setAnalyzing(true);
     try {
-      const response = await fetch("http://192.168.1.120:8000/analyze", {
+      const response = await fetch("https://sapanjai.fly.dev/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
