@@ -101,25 +101,6 @@ Serve Supabase functions:
 ```
 npx supabase functions serve
 ```
-
-### Terminal 3: Backend Setup
-Install FastAPI, Uvicorn, and other dependencies:
-```
-pip install fastapi uvicorn transformers torch
-```
-Optional: Set up a virtual environment:
-```
-python -m venv venv
-```
-
-MacOS/Linux: source venv/bin/activate  
-Windows: venv\Scripts\activate
-
-If you have a `requirements.txt`, install dependencies with:
-```
-pip install -r requirements.txt
-```
-
 2. Detailed User Manual (คู่มือการใช้งานโดยละเอียด)
 ------------------------------------------------------
 
