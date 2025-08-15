@@ -106,16 +106,6 @@ npx supabase functions serve
 
 Follow every step thoroughly for all three terminals as listed above.
 
-Start the FastAPI server with this command in Terminal 3:
-```
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
-
-If you get an error saying `uvicorn` is not recognized, use:
-```
-python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
-
 To access the platform, install **Expo Go** from the App Store or Google Play Store.
 
 Start the application with this command in Terminal 1:
