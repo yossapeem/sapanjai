@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+import os
 from cog import BasePredictor, Input
 from openai import OpenAI
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -7,9 +9,11 @@ from sentence_transformers import SentenceTransformer, util
 from huggingface_hub import snapshot_download
 import json
 
+load_dotenv()  # Load environment variables from .env
+
 class Predictor(BasePredictor):
     def setup(self):
-        self.client = OpenAI(api_key="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")
+        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
         self.SENTIMENT_MODEL_NAME = 'distilbert-base-uncased'
         self.MAX_LEN = 32

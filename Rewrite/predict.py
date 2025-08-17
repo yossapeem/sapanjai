@@ -1,10 +1,13 @@
 import os
+from dotenv import load_dotenv
 from cog import BasePredictor, Input
 from openai import OpenAI
 
+load_dotenv()  # Load environment variables from .env
+
 class Predictor(BasePredictor):
     def setup(self):
-        self.client = OpenAI(api_key="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")
+        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     def predict(
         self,
