@@ -45,3 +45,5 @@ supabase/.temp/         # temp files (older versions)
 app-example
 
 .env
+.env.local
+supabase.env
