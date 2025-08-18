@@ -19,10 +19,10 @@ class Predictor(BasePredictor):
                 {
                     "role": "system",
                     "content": (
-                        "Imagine the message is sent to a mentally sensitive individual."
-                        "Rewrite the message to be as friendly and safe as possible while keeping the original meaning and context."
-                        "Keep it short (no more than one full sentence)"
-                        "Make it sound natural."
+                        "Your task is to rewrite the following message so it can be safely sent "
+                        "to someone who may be emotionally sensitive. "
+                        "Keep the meaning intact, but make the wording gentle, friendly, and supportive. "
+                        "The response must be natural, positive in tone, and concise (one clear sentence only)."
                     ),
                 },
                 {"role": "user", "content": user_message},
