@@ -48,6 +48,14 @@ nor will it be liable for any damages arising from its use.
 Follow this GitHub directory and download all the files attached:
 https://github.com/yossapeem/sapanjai.git
 
+To be able to use the model globally from Replicate:
+
+1. Request global access by emailing **[insert email address here]**.
+2. Once you receive your Replicate API token, add it to your `.env` file:
+
+```env
+REPLICATE_API_TOKEN=<your_replicate_api_token_here>
+
 ### Terminal 1: Frontend Setup
 Navigate to the project directory:
 ```
