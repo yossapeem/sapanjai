@@ -2,10 +2,10 @@
 const REPLICATE_API_TOKEN = process.env.EXPO_PUBLIC_REPLICATE_API_TOKEN;
 
 // Rewrite deployment
-const REWRITE_DEPLOYMENT_URL = "https://api.replicate.com/v1/deployments/sapanjai/rewrite/predictions";
+const REWRITE_DEPLOYMENT_URL = "https://api.replicate.com/v1/deployments/sapanjai/rewrite-v3/predictions";
 
 // Sentiment deployment
-const SENTIMENT_DEPLOYMENT_URL = "https://api.replicate.com/v1/deployments/sapanjai/sentiment-v2/predictions";
+const SENTIMENT_DEPLOYMENT_URL = "https://api.replicate.com/v1/deployments/sapanjai/sentiment-v3/predictions";
 
 if (!REPLICATE_API_TOKEN) {
   console.warn("⚠️ Missing EXPO_PUBLIC_REPLICATE_API_TOKEN in environment variables");
